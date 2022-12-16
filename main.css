@@ -1,4 +1,5 @@
 body {
+    background-image: url(./img/фон.jpg) ;
     background-color: #001821;
     color: #ffffff;
     font: 400 16px/1.42 'Open Sans', Helvetica, sans-serif;
@@ -213,17 +214,28 @@ ul li {
  
 
 .tour__terms {
-   position: relative;
-    padding: 0;
+    display: flex;
+    align-items: center;
     margin-bottom: 24px;
+    padding-left: 0;
 }
 
 .tour__terms-item {
-    display: inline-block;
-    vertical-align: top;
-    width: 90px;
-    margin-right: 28px;
-    
+    display: flex;
+    padding-left: 5px;
+    padding-top: 0px;
+    margin-right: 29px;
+    color: #666666;
+}
+
+.tour__terms-info {
+    display: flex;
+    margin-left: 4px;
+    align-items: center;
+}
+
+.tour__item-icon {
+    margin-right: 10px;
 }
 
 .tour__terms-item:last-child {
@@ -349,4 +361,41 @@ ul li {
     text-decoration: none;
     font-weight: bold;
     line-height: 32px;
+}
+
+.pager__link:hover {
+    background: #FFFFFF;
+}
+
+.about {
+    display: flex;
+}
+.about:before {
+    content: "";
+    display: ;
+    width: 490px;
+    height: 505px;
+    background: url(./img/gates.png) top center / cover no-repeat;
+}
+
+.about__desc {
+    background: url(./img/mountains.png);
+    padding: 69px 95px;
+    max-width: 779px;
+    min-height: 455px;
+    margin-left: -128px;
+    margin-top: 107px;
+    border-radius: 5px;
+    overflow: hidden
+    
+}
+
+.about__title {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    margin-bottom: 37px;
+}
+.about__desc-text {
+    margin-bottom: 43px;
 }
