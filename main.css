@@ -1,5 +1,5 @@
 body {
-    background-image: url(./img/hero.jpg) center top no-repeat;
+    background: url(./img/1.png) center top no-repeat, url(./img/2.png) center bottom 155px no-repeat;
     background-color: #001821;
     color: #ffffff;
     font: 400 16px/1.42 'Open Sans', Helvetica, sans-serif;
@@ -22,7 +22,6 @@ ul li {
 }
 
 .wrapper main-page-wrapper {
-    background: url(./img/1.png) center top no-repeat, url(./img/2.png) center bottom 155px no-repeat;
     min-height: 100%;
     overflow: hidden;
 }
@@ -50,9 +49,13 @@ ul li {
 .menu {
     position: absolute;
     display: inline-block;
-    left: 347px;
+    left: 164px;
     top: 25px;
 
+}
+
+.menu__list {
+    padding: 0;
 }
 
 .menu__item {
@@ -429,7 +432,7 @@ ul li {
     height: 135px;
     left: 824px;
     top: 2428px;
-
+    color: #060606;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -437,7 +440,61 @@ ul li {
     line-height: 27px;
 }
 
+.footer-container {
+}
 .footer {
     position: relative;
     height: 165px;
+}
+
+.socials__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.socials {
+    top: 49px;
+    right: 300px;
+}
+
+.socials__item:last-child {
+    margin-right: 0;
+}
+
+.socials__link {
+    display: block;
+    text-decoration: none;
+    width: 36px;
+    height: 46px;
+    background: center center no-repeat;
+}
+
+.socials__item--icon--telegram .socials-link {
+    background-image:url(./img/t.png) ;
+}
+
+.socials__item--icon--telegram .socials-link:hover {
+    background-image: url(./img/t-hover.png)
+}
+.socials__item--icon--telegram .socials-link {
+    background-image:url(./img/vk.png) ;
+}
+
+.socials__item--icon--telegram .socials-link:hover {
+    background-image: url(./img/vk-hover.png)
+}
+.socials__item--icon--telegram .socials-link {
+    background-image:url(./img/facebook1.png) ;
+}
+
+.socials__item--icon--telegram .socials-link:hover {
+    background-image: url(./img/f2.png)
+}
+.socials__item--icon--telegram .socials-link {
+    background-image:url(./img/in.png) ;
+}
+
+.socials__item--icon--telegram .socials-link:hover {
+    background-image: url(./img/in-hover.png)
 }
