@@ -1,6 +1,4 @@
 body {
-    background: url(./img/1.png) center top no-repeat, url(./img/2.png) center bottom 155px no-repeat;
-    background-color: #001821;
     color: #ffffff;
     font: 400 16px/1.42 'Open Sans', Helvetica, sans-serif;
     line-height: 1.42;
@@ -10,6 +8,11 @@ body {
 
 * {
     box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 a {
@@ -41,25 +44,26 @@ body, html {
 .wrapper {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
-    min-height: 100%;
     min-width: 1200px;
 }
-.wrapper main-page-wrapper {
+.main-page-wrapper {
+    background:  url(./img/1.png) center top no-repeat, url(./img/2.png) center bottom 155px no-repeat;
+    background-color: #001821;
     min-height: 100%;
     overflow: hidden;
 }
 
 .container {
     margin: 0 auto;
-    width: 1141px;
+    width: 1140px;
 }
 
-.hero__container {
+.hero {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 600px;
+    min-height: 530px;
+    margin-bottom: 246px;
 }
 
 .header {
@@ -105,7 +109,6 @@ body, html {
     color: #DA0100;
 
 }
-
 
 .contacts {
     text-align: right;
@@ -288,7 +291,6 @@ body, html {
 
 
 .tour__description {
-    
     position: relative;
     width: 324px;
     height: 63px;
@@ -501,27 +503,22 @@ body, html {
 .footer__col--align--right {
     justify-content: flex-end;
 }
+
+
 .socials {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    width: 176px;
-    height: 36px;
-    top: 49px;
-    right: 300px;
+    margin-right: 52px;
 }
 
-
-
-
-
-
-
+.socials__list {
+    display: flex;
+    margin-right: 20px;
+    
+}
 
 
 .socials__item {
     display: flex;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 
 
@@ -563,31 +560,143 @@ body, html {
 
 
 
-.socials__item--icon--telegram .socials-link {
-    background-image: url(./img/t.png);
+.socials__item--icon--telegram .socials__link:after {
+    background: url(./img/t.png) 
 }
 
-.socials__item--icon--telegram .socials-link:hover {
-    background-image: url(./img/t-hover.png);
+.socials__item--icon--telegram .socials__link:before {
+    background: url(./img/t-hover.png) 
 }
-.socials__item--icon--vk .socials-link {
-    background-image:url(./img/vk.png);
-}
-
-.socials__item--icon--vk .socials-link:hover {
-    background-image: url(./img/vk-hover.png);
-}
-.socials__item--icon--facebook .socials-link {
-    background-image: url(./img/facebook1.png);
+.socials__item--icon--vk .socials__link:after {
+    background: url(./img/vk.png) 
 }
 
-.socials__item--icon--facebook .socials-link:hover {
-    background-image: url(./img/f2.png);
+.socials__item--icon--vk .socials__link:before {
+    background: url(./img/vk-hover.png) 
 }
-.socials__item--icon--instagram .socials-link {
-    background-image: url(./img/in.png);
+.socials__item--icon--facebook .socials__link:after {
+    background: url(./img/facebook1.png) 
 }
 
-.socials__item--icon--instagram .socials-link:hover {
-    background-image: url(./img/in-hover.png);
+.socials__item--icon--facebook .socials__link:before {
+    background: url(./img/f2.png) 
+}
+.socials__item--icon--instagram .socials__link:after {
+    background: url(./img/in.png)
+}
+
+.socials__item--icon--instagram .socials__link:before {
+    background: url(./img/in-hover.png) 
+}
+
+.socials__link:hover:after {
+    opacity: 0;
+}
+
+.socials__link:hover:before {
+    opacity: 1;
+}
+
+
+/* services page */
+
+.top__line {
+    min-height: 415px;
+    background:  url(./img/headline.jpg) right 10% top no-repeat;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-line__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page-title {
+    font-size: 72px;
+    line-height: 1;
+    font-weight: bold;
+}
+
+.breadcrumps__list {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumps__item {
+    display: flex;
+    padding-left: 2px;
+}
+
+
+
+
+.breadcrumps__item--active .breadcrumps__link {
+    color: #9A9A9A;
+    text-decoration: underline;
+}
+
+.breadcrumbs__item:first-child {
+    padding-left: 0px;
+}
+
+.breadcrumps__item:after {
+    padding-left: 2px;
+    content: "/";
+}
+
+.breadcrumps__link {
+    color: #9A9A9A;
+    font-size: 14px;
+}
+
+.page-content {
+    background: #F2F2F2;
+    color: #303030;
+    padding: 40px 0;
+}
+
+.services {
+    padding: 0;
+}
+
+.service {
+    display: flex;
+}
+
+.services__img {
+    width: 40%;
+    height: 333px;
+    margin-right: 5%;
+    border-radius: 5px;
+    overflow: hidden;
+}   
+ 
+.service__content {
+    flex: 1;
+}
+
+.services__item {
+    min-height: 333px;
+    margin-bottom: 42px;
+}
+
+.service__title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 22px;
+    color: #000000;
+}
+
+.service__desc {
+    line-height: 1.7;
+    margin-bottom: 30px;
 }
