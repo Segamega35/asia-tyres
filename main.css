@@ -94,6 +94,10 @@ body, html {
     padding: 0;
 }
 
+.menu__item:hover {
+    color: #DA0100;
+
+}
 .menu__item {
     display: inline-block;
     vertical-align: middle;
@@ -157,6 +161,11 @@ body, html {
     font-weight: 400;
     font-size: 18px;
     line-height: 20px;
+}
+
+.btn:hover {
+    background: #DA0100;
+    transition: .3s;
 }
 
 .btn {
@@ -392,10 +401,27 @@ body, html {
     margin-bottom: 150px;
 }
 
+.pager--theme--light {
+    color: #000000;
+    ;
+}
+
+.pager--theme--light .pager__item--active .pager__link {
+    color: #fff;
+    background-color: #F5170E;
+}
+
+.pager--theme--light .pager__link:hover {
+    color: #fff;
+    background-color: #F5170E;
+}
+
 .pager__list {
     display: flex;
     align-items: center;
 }
+
+
 
 
 .pager__display {
@@ -403,7 +429,8 @@ body, html {
     margin-right: 22px;
 }
 
-.pager_display-current {
+    
+.pager__display-current {
     display: block;
     margin-left: 5px;
     margin-right: 5px;
@@ -436,7 +463,8 @@ body, html {
 
 .pager__link:hover {
     background-color: #FFFFFF;
-    color: .3s;
+    color: #F5170E;
+    transition: .3s;
 }
 
 .about {
@@ -666,10 +694,14 @@ body, html {
 
 .services {
     padding: 0;
+    margin-bottom: 69px;
 }
 
 .service {
     display: flex;
+    text-decoration: none;
+    align-items: center;
+
 }
 
 .services__img {
@@ -700,3 +732,73 @@ body, html {
     line-height: 1.7;
     margin-bottom: 30px;
 }
+
+.service__botton {
+    background-color: #fff;
+    color: #F5170E;
+    border: 1px solid #F5170E;
+}
+.service__botton:hover {
+    background-color: #F5170E;
+    color: #fff;
+    transition: .3s;
+    
+}
+
+.inner-section {
+    background: #ffffff;
+    color: #1A1B1E;
+    padding: 95px 0;
+}
+
+.inner-section--bg--gray {
+    background: #f4f5f5;
+}
+
+
+.inner-section__title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 75px;
+}
+
+.partners {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -46px;
+}
+
+.partners__item {
+    margin-left: 46px;
+}
+
+.partners__item:nth-child(4n + 1) {
+    margin-left: 0;
+}
+
+.partners__link {
+    text-decoration: none;
+    display: flex;
+    width: 250px;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    filter: grayscale(100%);
+    
+}
+
+
+.partners__link:hover {
+    filter: grayscale(0);
+
+}
+
+
+.inner-footer {
+    background-color: #001821;
+    color: #FFF;
+    margin-top: auto;
+    padding: 40px 0;
+}
+
+.footer-container {}
